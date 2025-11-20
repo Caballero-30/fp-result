@@ -1,0 +1,34 @@
+{
+  "name": "fp-result",
+  "description": "A functional programming Result type for TypeScript",
+  "version": "1.0.0",
+  "files": [
+	"dist/**/*"
+  ],
+  "typings": "dist/index.d.ts",
+  "main": "dist/index.js",
+  "scripts": {
+	"test": "jest --config jest.config.json",
+	"build": "tsc",
+	"prepublishOnly": "npm test && npm run build"
+  },
+  "keywords": [
+	"functional",
+	"fp",
+	"either",
+	"monad"
+  ],
+  "author": "Caballero-30",
+  "repository": {
+	"type": "git",
+	"url": "git+https://github.com/Caballero-30/fp-result.git"
+  },
+  "homepage": "https://github.com/Caballero-30/fp-result#readme",
+  "license": "ISC",
+  "devDependencies": {
+	"@types/jest": "^30.0.0",
+	"jest": "^30.2.0",
+	"ts-jest": "^29.4.5",
+	"typescript": "^5.9.3"
+  }
+}
